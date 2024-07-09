@@ -41,7 +41,7 @@ let dates = fetch(MAIN_PATH + 'dates/' + currentDate)
     // Insertar los datos obtenidos en el elemento con id 'contentModal'
     document.getElementById('contentModal').innerHTML = `
         <h1>Hoy es ${currentDateFormated}</h1>
-        <p>Nombre: ${data.nombre}</p>
+        <h2>Nombre: ${data.nombre}</h2>
         <p>Descripcion:  ${data.descripcion}</p>      
         `;
   })
