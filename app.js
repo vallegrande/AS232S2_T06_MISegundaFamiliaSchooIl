@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 const conexion = mysql.createConnection({
-    host: "",
+    host: "dbconsulta.cj62oee20fk1.us-east-1.rds.amazonaws.com",
     port: 3306,
     database: "registro",
     user: "erikson",
