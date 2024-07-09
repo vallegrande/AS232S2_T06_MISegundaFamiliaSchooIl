@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+PT:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Concert+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ body {
+  background: #f9f9f9;
+   font-family: "Poppins", sans-serif;
+ }
+
+:root {
+  --text-color: #000000;
+  --bg-color: #fff;
+  --main-color: #134ba7;
+  --botton-color: #921f2e;
+
+  --h1-font: 3rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.351),
+      rgba(0, 0, 0, 0.351)
+    ),
+    url(../img/P1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position: bottom top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-text h1 {
+  font-size: var(--h1-font);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: var(--bg-color);
+  font-family: "Playwrite PT", cursive !important;
+  text-shadow: 0 0 9px var(--bg-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 40px;
+  background-color: var(--botton-color);
+  margin-top: 20px;
+  color: var(--bg-color);
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid transparent var(--main-color);
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(10px);
+  border: 3px solid #ffffff;
+  background: #7f7f7f59;
+  color: var(--botton-color);
+  text-shadow: 0 0 30px;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
+/*RESPONSIVE SECCION INICIO */
+@media (max-width: 1200px) {
+  section {
+    padding: 45px 5% 35px;
+  }
+
+  :root {
+    --h1-font: 4.6rem;
+    --h2-font: 2.8rem;
+    --p-font: 15px;
+  }
+
+  .home {
+    height: 90vh;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --h1-font: 2.6rem;
+    --h2-font: 1.8rem;
+    --p-font: 14px;
+  }
+}

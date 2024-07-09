@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión, Misión y Valores - Mi Segunda Familia School</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/proposito.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+</head>
+
+<body>
+
+<!--=============== HEADER ===============-->
+<header class="header">
+    <nav class="nav container">
+        <div class="nav__data">
+            <a href="#" class="nav__logo">
+                <img width="100px" src="/public/img/L1.png"  alt="">
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__burger"></i>
+                <i class="ri-close-line nav__close"></i>
+            </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Inicio</a></li>
+
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Acerca de nosotros <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                    <ul class="dropdown__menu">
+                        <!-- Submenú para Inicial -->
+                        <li class="dropdown__subitem">
+                            <a href="historia.html">
+                                <div class="dropdown__link">
+                                    <i class="ri-hourglass-line"></i> Historia</i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Submenú para Primaria -->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-book-line"></i> Proposito <i class="ri-add-line dropdown__add"></i>
+                            </div>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="proposito.html#vision" class="dropdown__sublink">
+                                        <i class="ri-eye-line"></i> Vision
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="proposito.html#mision" class="dropdown__sublink">
+                                        <i class="ri-flag-line"></i> Mision
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="proposito.html" class="dropdown__sublink">
+                                        <i class="ri-hand-heart-line"></i> Valores
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Educación <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                    <ul class="dropdown__menu">
+                        <!-- Submenú para Inicial -->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-pencil-line"></i> Inicial <i class="ri-add-line dropdown__add"></i>
+                            </div>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="inicial.html" class="dropdown__sublink">
+                                        <i class="ri-information-line"></i> Introducción
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#objetivos" class="dropdown__sublink">
+                                        <i class="ri-compass-line"></i> Objetivos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#metodologia" class="dropdown__sublink">
+                                        <i class="ri-lightbulb-line"></i> Metodología
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#areas-aprendizaje" class="dropdown__sublink">
+                                        <i class="ri-book-2-line"></i> Áreas de Aprendizaje
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#docente" class="dropdown__sublink">
+                                        <i class="fas fa-user"></i> Docente
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Submenú para Primaria -->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-book-line"></i> Primaria <i class="ri-add-line dropdown__add"></i>
+                            </div>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="primaria.html#introduccion" class="dropdown__sublink">
+                                        <i class="ri-information-line"></i> Introducción
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#objetivos" class="dropdown__sublink">
+                                        <i class="ri-compass-line"></i> Objetivos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#metodologia" class="dropdown__sublink">
+                                        <i class="ri-lightbulb-line"></i> Metodología
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#areas-aprendizaje" class="dropdown__sublink">
+                                        <i class="ri-book-2-line"></i> Áreas de Aprendizaje
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#docente" class="dropdown__sublink">
+                                        <i class="fas fa-user"></i> docente
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="formulario.html" class="nav__link">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+
+    <section class="bienvenida">
+        <div class="container">
+            <div class="text-center">
+                <h1 id="welcome-text">Bienvenidos</h1>
+                <h2>Mi Segunda Familia School</h2>
+                <p>
+                    En Mi Segunda Familia School nos dedicamos a proporcionar una <strong><em>educación de
+                            calidad</em></strong> que forma líderes
+                    del mañana.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="vision">
+        <img src="/public/img/ilustracion-concepto-vision-empresarial.png" alt="Visión">
+        <div class="content">
+            <h2>Visión</h2>
+            <p>Ser reconocidos como líderes en educación infantil y primaria, comprometidos con el desarrollo integral
+                de cada niño, ofreciendo un ambiente seguro, estimulante y enriquecedor.</p>
+        </div>
+    </section>
+    <section id="mision">
+        <img src="/public/img/gente-trabajo-equipo-objetivos-piezas-rompecabezas.png" alt="Misión">
+        <div class="content">
+            <h2>Misión</h2>
+            <p>En 'Mi Segunda Familia School', nos dedicamos a proporcionar una educación de calidad que nutra el
+                crecimiento académico, emocional y social de nuestros estudiantes.</p>
+        </div>
+    </section>
+
+
+
+<!--=============== FOOTER ===============-->
+
+<footer>
+    <div class="footer">
+        <div class="logo">
+            MS<span>FS</span>
+        </div>
+        <div class="description">
+            <p class="pa">es una institución educativa dedicada a brindar una educación integral y de calidad desde
+                la primaria hasta la secundaria. Nuestro compromiso es formar estudiantes con valores y
+                conocimientos que les permitan enfrentar los retos del futuro. Únete a nuestra comunidad educativa y
+                mantente informado sobre nuestras actividades y eventos.</p>
+        </div>
+        <div class="office">
+            <h3>Office</h3>
+            <p class="pof">ITPL Road<br>
+                Whitefield, Bangalore<br>
+                Karnataka, PIN 560066,<br>
+                India<br>
+                <a class="aof" href="segundafamilia@gmail.com">S.F.S@gmail.com</a><br>
+                <b>+91 - 0123456789</b>
+            </p>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Features</a>
+            <a href="#">Contacts</a>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Easy Tutorials © 2021 - All Rights Reserved
+    </div>
+</footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/public/js/proposito.js"></script>
+    <script src="/public/js/footer.js"></script>
+    <script src="/public/js/navbar.js"></script>
+</body>
+
+</html>

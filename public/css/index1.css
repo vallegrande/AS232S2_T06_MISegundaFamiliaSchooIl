@@ -1,0 +1,500 @@
+body {
+  background: #f9f9f9;
+}
+
+/* Estilos para el contenedor del loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  z-index: 9999; /* Asegura que esté sobre todo otro contenido */
+}
+
+/* Estilos para el spinner */
+.loader {
+  border: 4px solid #f3f3f3; /* Color del borde */
+  border-top: 4px solid #3498db; /* Color del borde superior */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animación giratoria */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* BIENENIDA */
+
+.bienvenida {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.bienvenida .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bienvenida h1 {
+  color: #333;
+  font-weight: bold; /* Negrita */
+  margin-bottom: 20px; /* Espacio inferior */
+  font-weight: 500;
+  font-family: "Concert One", sans-serif;
+  font-style: normal;
+  font-size: 3.5em; /* Aumenta el tamaño del h2 */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  border-right: 3px solid #007bff; /* Línea simulando la escritura */
+  white-space: nowrap; /* Evita el salto de línea */
+  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite; /* Animación de escritura */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #007bff;
+  }
+}
+
+.bienvenida h2 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px; /* Aumenta el tamaño del h2 */
+  color: #921f2e; /* Color del texto */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.bienvenida p {
+  font-size: 1.2em; /* Tamaño del texto */
+  color: #666; /* Color del texto */
+  line-height: 1.6; /* Altura de línea */
+  margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .bienvenida {
+    padding: 60px 10px; /* Ajuste de espaciado interno */
+  }
+
+  .bienvenida h1 {
+    margin-bottom: 15px; /* Ajuste de espacio inferior */
+  }
+
+  .bienvenida h2 {
+    font-size: 1.8em; /* Reducción del tamaño del texto */
+    margin-bottom: 15px; /* Ajuste de espacio inferior */
+  }
+
+  .bienvenida p {
+    font-size: 1em; /* Reducción del tamaño del texto */
+    margin-bottom: 20px; /* Ajuste de espacio inferior */
+  }
+}
+
+/* QUIENES SOMOS TXT */
+:root {
+  --text-color: #000;
+  --bg-color: #fff;
+  --main-color: #134ba7;
+  --highlight-color: #921f2e;
+
+  --h1-font: 3rem;
+  --h2-font: 2.5rem;
+  --p-font: 1rem;
+}
+
+/* Section Container */
+.somos {
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.5s ease; /* Transición suave */
+  background-color: #f9f9f9;
+  padding: 50px 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visible {
+  opacity: 1; /* Mostrar cuando entre en pantalla */
+}
+
+/* Text Section */
+.quienes-somos {
+  flex-direction: column-reverse;
+  align-content: center;
+  justify-content: center;
+  font-family: var(--body-font);
+  color: var(--text-color);
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  max-width: 50%;
+  flex: 1;
+}
+
+.quienes-somos .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quienes-somos .texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.quienes-somos h2 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  margin-bottom: 30px;
+  font-size: 50px; /* Aumenta el tamaño del h2 */
+}
+
+.quienes-somos p {
+  font-size: var(--p-font);
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-size: 18px; /* Aumenta el tamaño del párrafo */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .somos {
+    padding: 40px 20px;
+  }
+
+  .quienes-somos {
+    padding: 30px 15px;
+    max-width: 100%;
+  }
+
+  .quienes-somos p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quienes-somos {
+    padding: 20px 10px;
+  }
+
+  .quienes-somos p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quienes-somos {
+    padding: 15px 5px;
+  }
+
+  .quienes-somos p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Underline effect */
+.underline-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Image Cards Section */
+.contenedor {
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+  z-index: 10;
+}
+
+.swiper {
+  width: 250px;
+  height: 500px;
+  padding: 50px 0;
+}
+
+.swiper-slide {
+  position: relative;
+  border-radius: 10px;
+}
+
+.swiper-slide span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 7px 18px;
+  margin: 10px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.095);
+  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.4),
+    inset -3.01px 3.01px rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(74px);
+}
+
+.swiper-slide h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0 0 20px 20px;
+}
+
+.swiper-slide:nth-child(1n) {
+  background: url(/public/img/S1.jpg) no-repeat 50% 50% / cover;
+}
+.swiper-slide:nth-child(2n) {
+  background: url(/public/img/S2.jpg) no-repeat 50% 50% / cover;
+}
+.swiper-slide:nth-child(3n) {
+  background: url(/public/img/S3.jpg) no-repeat 50% 50% / cover;
+}
+.swiper-slide:nth-child(4n) {
+  background: url(/public/img/S3.jpg) no-repeat 50% 50% / cover;
+}
+.swiper-slide:nth-child(5n) {
+  background: url(/public/img/S2.jpg) no-repeat 50% 50% / cover;
+}
+.swiper-slide:nth-child(6n) {
+  background: url(/public/img/S1.jpg) no-repeat 50% 50% / cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+.le {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  color: #fff; /* Color del texto */
+  font-size: 2rem; /* Tamaño de la fuente */
+  font-family: "Poppins", sans-serif; /* Fuente */
+  position: absolute; /* Posición absoluta para superponer sobre las tarjetas */
+  top: 50%; /* Ajusta la posición verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Centra completamente */
+}
+
+.direc {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px 40px;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /* Cambiar a una columna cuando la pantalla es estrecha */
+    padding: 40px 20px; /* Ajuste de los márgenes internos */
+  }
+}
+
+.tuto h2 {
+  text-align: center;
+  font-family: "Concert One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+  margin-bottom: -60px;
+  font-size: 50px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: min(100%, 350px);
+  height: 400px;
+  padding: 30px 25px;
+  background: #fff;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  border-radius: 45px;
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(208, 195, 195, 0.5), #921f2e);
+  transition: all 0.5s;
+  opacity: 0;
+  border-radius: 40px;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card .info h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 10px 0 25px;
+  line-height: 130%;
+}
+
+.card .info .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #4b5563;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.card .info .btn:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  background-color: #4b5563;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .tuto h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+}
+
+/* Sección Ubicación */
+.location {
+  font-family: "Concert One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.location h2 {
+  margin: 0; /* Elimina cualquier margen por defecto */
+  padding: 15px 0; /* Añade espacio arriba y abajo si es necesario */
+}
+
+.location {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  background-color: #eaeaea;
+  border-radius: 8px;
+  margin-top: 20px;
+}

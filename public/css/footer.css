@@ -1,0 +1,157 @@
+
+
+.footer {
+    background-color: #b3b3b3;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.footer div {
+    flex: 1;
+    min-width: 200px; /* Reduced min-width */
+    margin: 5px; /* Reduced margin */
+}
+
+.footer .logo {
+    font-size: 30px; /* Reduced font size */
+    font-weight: bold;
+    color: #144ca7;
+    margin-bottom: 5px; /* Reduced margin */
+    flex: 100%;
+    text-align: center;
+}
+
+.footer .description {
+    flex: 100%;
+    text-align: center;
+}
+
+.footer .description p {
+    padding: 20px; /* Reduced padding */
+    font-size: 15px; /* Reduced font size */
+    line-height: 1.4; /* Adjusted line height */
+}
+
+.pof {
+    line-height: 2.2;
+}
+
+.footer .office,
+.footer .links,
+.footer .newsletter {
+    margin-top: 20px; /* Reduced margin */
+    text-align: center;
+    position: relative;
+}
+
+.footer h3 {
+    margin-bottom: 20px; /* Reduced margin */
+    font-size: 16px; /* Reduced font size */
+    text-transform: uppercase;
+    color: #144ca7;
+    position: relative;
+}
+
+.footer h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #144ca7;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.footer h3:hover::after {
+    transform: scaleX(1);
+}
+
+.footer a {
+    color: #921f2e;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .links a {
+    display: block;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin: 5px; /* Reduced margin */
+    font-size: 25px; /* Reduced font size */
+    color: #000000;
+    transition: transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #921f2e;
+    transform: translateY(-5px);
+}
+
+.footer .office p,
+.footer .links a {
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer .newsletter {
+    text-align: center;
+}
+
+.footer .newsletter h3 {
+    text-align: center;
+}
+
+.footer .newsletter form {
+    display: none; /* Hide the email input form */
+}
+
+.footer .newsletter .social-icons {
+    margin-top: 10px; /* Reduced margin */
+}
+
+.copyright {
+    text-align: center;
+    padding: 5px 0; /* Reduced padding */
+    border-top: 1px solid #ffffff;
+    width: 100%;
+    color: #000000;
+    background-color: #144ca7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .logo,
+    .footer .description,
+    .footer .office,
+    .footer .links,
+    .footer .newsletter {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .footer .description p {
+        text-align: center;
+    }
+}

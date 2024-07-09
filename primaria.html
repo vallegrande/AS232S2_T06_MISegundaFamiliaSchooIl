@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Mi Segunda Familia School</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/inicial.css">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+</head>
+
+<body>
+
+   <!--=============== HEADER ===============-->
+   <header class="header">
+    <nav class="nav container">
+        <div class="nav__data">
+            <a href="#" class="nav__logo">
+                <img width="100px" src="/public/img/L1.png"  alt="">
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__burger"></i>
+                <i class="ri-close-line nav__close"></i>
+            </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Inicio</a></li>
+
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Acerca de nosotros <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                    <ul class="dropdown__menu">
+                        <!-- Submenú para Inicial -->
+                        <li class="dropdown__subitem">
+                            <a href="historia.html">
+                                <div class="dropdown__link">
+                                    <i class="ri-hourglass-line"></i> Historia</i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Submenú para Primaria -->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-book-line"></i> Proposito <i class="ri-add-line dropdown__add"></i>
+                            </div>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="proposito.html#vision" class="dropdown__sublink">
+                                        <i class="ri-eye-line"></i> Vision
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="proposito.html#mision" class="dropdown__sublink">
+                                        <i class="ri-flag-line"></i> Mision
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="proposito.html" class="dropdown__sublink">
+                                        <i class="ri-hand-heart-line"></i> Valores
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Educación <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+                    <ul class="dropdown__menu">
+                        <!-- Submenú para Inicial -->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-pencil-line"></i> Inicial <i class="ri-add-line dropdown__add"></i>
+                            </div>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="inicial.html" class="dropdown__sublink">
+                                        <i class="ri-information-line"></i> Introducción
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#objetivos" class="dropdown__sublink">
+                                        <i class="ri-compass-line"></i> Objetivos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#metodologia" class="dropdown__sublink">
+                                        <i class="ri-lightbulb-line"></i> Metodología
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#areas-aprendizaje" class="dropdown__sublink">
+                                        <i class="ri-book-2-line"></i> Áreas de Aprendizaje
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inicial.html#docente" class="dropdown__sublink">
+                                        <i class="fas fa-user"></i> Docente
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Submenú para Primaria -->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-book-line"></i> Primaria <i class="ri-add-line dropdown__add"></i>
+                            </div>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="primaria.html#introduccion" class="dropdown__sublink">
+                                        <i class="ri-information-line"></i> Introducción
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#objetivos" class="dropdown__sublink">
+                                        <i class="ri-compass-line"></i> Objetivos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#metodologia" class="dropdown__sublink">
+                                        <i class="ri-lightbulb-line"></i> Metodología
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#areas-aprendizaje" class="dropdown__sublink">
+                                        <i class="ri-book-2-line"></i> Áreas de Aprendizaje
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="primaria.html#docente" class="dropdown__sublink">
+                                        <i class="fas fa-user"></i> docente
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="formulario.html" class="nav__link">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+
+    <main>
+        <!--=============== BIENVENIDA ===============-->
+        <section class="bienvenida">
+            <div class="container">
+                <div class="text-center">
+                    <h1 id="welcome-text">Historia</h1>
+                    <h2>Mi Segunda Familia School</h2>
+                    <p>
+                        Explora nuestra <strong><em>Educación Primaria</em></strong> en <strong><em>Mi Segunda Familia
+                                School</em></strong>: principios educativos, metodología activa y áreas de
+                        aprendizaje como <strong><em>Matemáticas</em></strong>, <strong><em>Ciencias
+                                Naturales</em></strong> y <strong><em>Arte</em></strong>, junto con nuestro equipo
+                        docente comprometido.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== INTRODUCCION ===============-->
+        <section id="introduccion" class="section">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Introducción</h2>
+                    <p>Bienvenido a nuestra sección de <strong><em>Educación Inicial</em></strong>, donde nos enfocamos
+                        en el <strong><em>desarrollo integral</em></strong> de cada niño desde temprana edad.</p>
+                    <p>En <strong><em>Mi Segunda Familia School</em></strong>, valoramos cada etapa del
+                        <strong><em>desarrollo infantil</em></strong> y promovemos la exploración, el descubrimiento y
+                        la creatividad.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="/public/img/colorful-rubik-s-cube-png.webp" alt="Descripción de la imagen">
+                </div>
+            </div>
+        </section>
+
+        <!--=============== OBJETIVOS ===============-->
+        <section id="objetivos" class="section">
+            <div class="container">
+                <h2>Objetivos</h2>
+                <div class="objetivos-container">
+                    <!-- Objetivo 1 -->
+                    <div class="card">
+                        <img src="/public/img/view-3d-kids-library.jpg" alt="Objetivo 1">
+                        <div class="info">
+                            <h3>Desarrollo de Competencias Básicas</h3>
+                            <p>Enseñar y reforzar habilidades fundamentales académicas para establecer una base sólida.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Objetivo 2 -->
+                    <div class="card">
+                        <img src="/public/img/best-friends-participating-treasure-hunt-outdoors.jpg" alt="Objetivo 2">
+                        <div class="info">
+                            <h3>Exploración y Descubrimiento del Mundo</h3>
+                            <p>Fomentar la curiosidad científica, histórica y cultural a través de experiencias de
+                                aprendizaje prácticas.</p>
+                        </div>
+                    </div>
+                    <!-- Objetivo 3 -->
+                    <div class="card">
+                        <img src="/public/img/O3.jpg" alt="Objetivo 3">
+                        <div class="info">
+                            <h3>Desarrollo de Habilidades Sociales y Colaborativas</h3>
+                            <p>Promover la capacidad de trabajar en equipo, resolver conflictos y comunicarse
+                                efectivamente con otros.</p>
+                        </div>
+                    </div>
+                    <!-- Objetivo 4 -->
+                    <div class="card">
+                        <img src="/public/img/kids-table-coloring.jpg" alt="Objetivo 4">
+                        <div class="info">
+                            <h3>Educación en Valores y Ciudadanía</h3>
+                            <p>Introducir principios éticos, responsabilidad cívica y respeto por la diversidad en la
+                                comunidad escolar.</p>
+                        </div>
+                    </div>
+                    <!-- Objetivo 5 -->
+                    <div class="card">
+                        <img src="/public/img/2827873.jpg" alt="Objetivo 5">
+                        <div class="info">
+                            <h3>Preparación para el Futuro</h3>
+                            <p>Equipar a los estudiantes con habilidades prácticas y conocimientos que les preparen para
+                                etapas educativas posteriores y la vida adulta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--=============== METODOLOGIA ===============-->
+        <section id="metodologia" class="section">
+            <h2>Metodología</h2>
+            <div class="metodologia-content">
+                <div class="metodologia-text">
+                    <h3>Nuestra Metodología</h3>
+                    <p>Nuestra metodología se basa en el <strong><em>aprendizaje activo y participativo</em></strong>.
+                        Fomentamos el desarrollo
+                        integral de cada niño a través de <strong><em>actividades lúdicas y educativas</em></strong> que
+                        promueven la curiosidad y
+                        el descubrimiento.</p>
+                    <p>Implementamos <strong><em></em></strong> que buscan adaptarse a las necesidades
+                        individuales de cada estudiante, <strong><em>promoviendo un ambiente inclusivo y
+                                motivador</em></strong>.</p>
+                </div>
+                <div class="abc-numbers-container">
+                    <div class="abc-container">
+                        <div class="abc" style="animation-delay: 0s;">x</div>
+                        <div class="abc" style="animation-delay: 0.5s;">+</div>
+                        <div class="abc" style="animation-delay: 1s;">-</div>
+                    </div>
+                    <div class="numbers-container">
+                        <div class="number" style="animation-delay: 0s;">√</div>
+                        <div class="number" style="animation-delay: 0.5s;">📐</div>
+                        <div class="number" style="animation-delay: 1s;">α</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- Áreas de Aprendizaje Section -->
+        <section id="areas-aprendizaje" class="aprendizaje-section">
+            <h2 class="aprendizaje-title">Áreas de Aprendizaje</h2>
+            <div class="aprendizaje-cards-container">
+                <div class="aprendizaje-card" onclick="flipCard(this)">
+                    <div class="aprendizaje-card-front">
+                        <h3>Matemáticas</h3>
+                    </div>
+                    <div class="aprendizaje-card-back">
+                        <p>Explora conceptos básicos de matemáticas de manera divertida y práctica.</p>
+                    </div>
+                </div>
+                <div class="aprendizaje-card" onclick="flipCard(this)">
+                    <div class="aprendizaje-card-front">
+                        <h3>Ciencias Naturales</h3>
+                    </div>
+                    <div class="aprendizaje-card-back">
+                        <p>Descubre el mundo natural a través de experimentos y observaciones.</p>
+                    </div>
+                </div>
+                <div class="aprendizaje-card" onclick="flipCard(this)">
+                    <div class="aprendizaje-card-front">
+                        <h3>Arte</h3>
+                    </div>
+                    <div class="aprendizaje-card-back">
+                        <p>Desarrolla la creatividad y la expresión artística mediante diversas actividades.</p>
+                    </div>
+                </div>
+                <div class="aprendizaje-card" onclick="flipCard(this)">
+                    <div class="aprendizaje-card-front">
+                        <h3>Lenguaje</h3>
+                    </div>
+                    <div class="aprendizaje-card-back">
+                        <p>Fomenta las habilidades de lectura, escritura y comunicación verbal.</p>
+                    </div>
+                </div>
+                <div class="aprendizaje-card" onclick="flipCard(this)">
+                    <div class="aprendizaje-card-front">
+                        <h3>Educación Física</h3>
+                    </div>
+                    <div class="aprendizaje-card-back">
+                        <p>Promueve el desarrollo físico y la salud a través del juego y la actividad física.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="docente    " class="docente">
+            <div class="container">
+                <h2 class="plani">Planilla de Docente</h2>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="/public/img/2737459.jpg" alt="Docente 1">
+                            </div>
+                            <div class="slide-content">
+                                <h3>LIDIA</h3>
+                                <p>Descripción breve del Docente 1.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="/public/img/m2ot_lm1u_220719.jpg" alt="Docente 2">
+                            </div>
+                            <div class="slide-content">
+                                <h3>Nombre del Docente 2</h3>
+                                <p>Descripción breve del Docente 2.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="/public/img/D1.png" alt="Docente 2">
+                            </div>
+                            <div class="slide-content">
+                                <h3>Nombre del Docente 2</h3>
+                                <p>Descripción breve del Docente 2.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="/public/img/D1.png" alt="Docente 2">
+                            </div>
+                            <div class="slide-content">
+                                <h3>Nombre del Docente 2</h3>
+                                <p>Descripción breve del Docente 2.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="/public/img/D1.png" alt="Docente 2">
+                            </div>
+                            <div class="slide-content">
+                                <h3>Nombre del Docente 2</h3>
+                                <p>Descripción breve del Docente 2.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!--=============== FOOTER ===============-->
+
+<footer>
+    <div class="footer">
+        <div class="logo">
+            MS<span>FS</span>
+        </div>
+        <div class="description">
+            <p class="pa">es una institución educativa dedicada a brindar una educación integral y de calidad desde
+                la primaria hasta la secundaria. Nuestro compromiso es formar estudiantes con valores y
+                conocimientos que les permitan enfrentar los retos del futuro. Únete a nuestra comunidad educativa y
+                mantente informado sobre nuestras actividades y eventos.</p>
+        </div>
+        <div class="office">
+            <h3>Office</h3>
+            <p class="pof">ITPL Road<br>
+                Whitefield, Bangalore<br>
+                Karnataka, PIN 560066,<br>
+                India<br>
+                <a class="aof" href="segundafamilia@gmail.com">S.F.S@gmail.com</a><br>
+                <b>+91 - 0123456789</b>
+            </p>
+        </div>
+        <div class="links">
+            <h3>Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Features</a>
+            <a href="#">Contacts</a>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Easy Tutorials © 2021 - All Rights Reserved
+    </div>
+</footer>
+
+
+
+
+    </main>
+    <script src="/public/js/primaria.js"></script>
+    <script src="/public/js/navbar.js"></script>
+    <script src="/public/js/calendario.js"></script>
+    <script src="/public/js/footer.js"></script>
+</body>
+
+</html>
